@@ -77,4 +77,3 @@ p = [(j,i) for i in num if i>1 and i!=3 for j in fruits]
 q = [(j,i) for i in num if i>1 and i!=3 for j in fruits if j!="apple" and j!="manago"]
 print(q)
 
-dsgdsfhgsfd
