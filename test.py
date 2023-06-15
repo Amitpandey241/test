@@ -77,3 +77,22 @@ p = [(j,i) for i in num if i>1 and i!=3 for j in fruits]
 q = [(j,i) for i in num if i>1 and i!=3 for j in fruits if j!="apple" and j!="manago"]
 print(q)
 
+fruits =["apple","mango","kiwi","chiku", "banana"]
+num = [1,2,3,4]
+n = ["grapes" if i == "kiwi" else i for i in fruits if i!="banana"]
+# print(n)
+p = [(j,i) for i in num if i>1 and i!=3 for j in fruits]
+# print(p)
+q = [(j,i) for i in num if i>1 and i!=3 for j in fruits if j!="apple" and j!="manago"]
+print(q)
+
+
+#num = [j for i in range(1,1001) for j in str(i) if i=='3']
+
+num = [i for i in range(1,1001) for j in str(i) if j=='3']
+print("THis is num",num)
+
+# for i in range(10,20):
+#     for j in str(i):
+#         print(j)
+
