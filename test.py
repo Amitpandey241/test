@@ -52,8 +52,8 @@ for i in c:
         intr.append(i)
 
 
-print(str1)
-print(intr)
+# print(str1)
+# print(intr)
 
 
 
@@ -68,3 +68,12 @@ for i in a:
         dic[i]=1
 print(dic)
 del a
+fruits =["apple","mango","kiwi","chiku", "banana"]
+num = [1,2,3,4]
+n = ["grapes" if i == "kiwi" else i for i in fruits if i!="banana"]
+# print(n)
+p = [(j,i) for i in num if i>1 and i!=3 for j in fruits]
+# print(p)
+q = [(j,i) for i in num if i>1 and i!=3 for j in fruits if j!="apple" and j!="manago"]
+print(q)
+
