@@ -96,3 +96,34 @@ print("THis is num",num)
 #     for j in str(i):
 #         print(j)
 
+s =[1,2,3]
+s = [k for k in s if k!=3]
+print(s)
+c = {"pratik":20,"summet":21,"amit":21}
+v = {k:v for k,v in c.items() if k!= "pratik"}
+string1 = "Hello I am Kraken I love to eat humans"
+
+d = {('pratik' if k=='pratik' else k):v-v+999  for k,v in c.items() }
+# For all the numbers 1–1000, use a nested
+# list/dictionary comprehension to find the highest single digit any of the numbers is divisible by
+a = [j for i in range(1,1000) if i>8 and len(str(i))==1 for j in range(1,1000) if i%j==0 and j!=1 and j!=i]
+# c = [ i for i in range(1,10) if i>8]
+# print(c)
+print(a)
+
+
+# print(d)
+# print(v)
+# for k,v in c.items():
+#     if k=='pratik':
+#         k['pratik']=24
+#
+# print(v)
+
+
+
+#
+# list = ["amit","sumeet","dasrt"]
+# l =[i for i in list if len(i)>4]
+# print(l)
+
