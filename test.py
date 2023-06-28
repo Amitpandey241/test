@@ -150,3 +150,40 @@ if __name__=="__main__":
 # y = [x[i][i] for i in range(len(x))]
 # print(y)
 
+
+# li = [1,2,3,4,5,6,7,8,9,10]
+#
+# li = [i for i in li if i%2==0]
+# print(li)
+#
+# tp = (1,2,3,4,5,6,7,8,9,10)
+# di = {"A":"Apple","B":"Ball", "C":"cat", "D":"Dog"}
+# for key,value in di.items():
+#     print(key,":",value)
+#
+# li = [x for x in range(1,101)]
+# # print(li)
+# def generator1(n):
+#     size= len(n)-1
+#     value=0
+#     while size>=0:
+#         yield li[value]
+#         value += 1
+#         size-=1
+#
+# for n in generator1(li):
+#     a = n+1
+#     print(a)
+
+m = [[1,2,3],
+     [4,5,6],
+     [7,8,9]]
+# print(len(m), len(m[0]))
+# print(m)
+# size = len(m)
+for i in range(len(m)):
+    for j in range(len(m)):
+        if i+j==len(m)-1:
+            print(m[i][j],end="")
+    print()
+
